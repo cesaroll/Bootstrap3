@@ -1,27 +1,47 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Big Lebowski</title>
-  <link href="css/site.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="lib/bootstrap-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootswatch-dist/css/darkly-bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  
 </head>
 <body>
   <div id="page">
-    <header>
-      <div id="menu">
-        <ul>
-          <li><a href=".">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+   
+    <header class="container">
+     
+      <div id="menu" class="navbar navbar-default navbar-fixed-top">       
+                
+         <div class="navbar-header">
+          <button class="btn btn-success navbar-toggle" 
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </button>
+
+          <div id="logo">
+            <a href='.'><h4>The Big Lebowski</h4></a>
+          </div> 
+         </div>
+          
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav"><a href=".">Home</a></li>
+            <li class="nav"><a href="about.html">About</a></li>
+            <li class="nav active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>          
+              
       </div>
-      <div id="logo">
-        <a href='.'>The Big Lebowski</a>
-      </div>
+      
     </header>
 
-    <section id="body">
+    <section id="body" class="container">
       <h1>Contact Us</h1>
       <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
       <form>
@@ -56,11 +76,13 @@
       </div>
     </section>
     <hr />
-    <footer>
+    <footer class="container">
       <p>Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
     </footer>
   </div>
 
-  <script src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="lib/jquery-dist/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-dist/js/bootstrap.min.js"></script>
+  
 </body>
 </html>

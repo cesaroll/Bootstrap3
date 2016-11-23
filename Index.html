@@ -6,7 +6,7 @@
   <title>The Big Lebowski</title>
   
   <link rel="stylesheet" href="lib/bootstrap-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="lib/bootswatch-dist/css/amelia-bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootswatch-dist/css/darkly-bootstrap.min.css">
   <link rel="stylesheet" href="css/site.css">
   
 </head>
@@ -14,25 +14,32 @@
   <div id="page">
     <header class="container">
      
-      <div id="menu" class="navbar navbar-default">       
-       <div class="navbar-inner">
-         
-          <a href="#" class="btn btn-primary btn-large"><i class="glyphicon glyphicon-chevron-down"></i></a>
+      <div id="menu" class="navbar navbar-default navbar-fixed-top">       
+                
+         <div class="navbar-header">
+          <button class="btn btn-success navbar-toggle" 
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </button>
 
           <div id="logo">
             <a href='.'><h4>The Big Lebowski</h4></a>
-          </div>
-
-          <ul>
-            <li><a href=".">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          </div> 
+         </div>
+          
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav active"><a href=".">Home</a></li>
+            <li class="nav"><a href="about.html">About</a></li>
+            <li class="nav"><a href="contact.html">Contact</a></li>
           </ul>
-        
-       </div>        
+        </div>          
+              
       </div>
       
     </header>
+    
     <section id="body"  class="container">
      
       <div class="row hidden-xs">
@@ -40,7 +47,7 @@
         <img src="images/carousel-2.jpg" alt="2" class="col-md-2">
         <img src="images/carousel-3.jpg" alt="3" class="col-md-2">
         <img src="images/carousel-4.jpg" alt="4" class="col-md-2">
-      </div>> 
+      </div>
      
       <section id="main" class="col-md-8 col-sm-9">
 
@@ -74,14 +81,17 @@
         <p>I got a nice quiet beach community here, and I aim to keep it nice and quiet. I like your style, Dude. Nice marmot. Sir, this is a mortuary, not a rental house. Donny was a good bowler, and a good man. He was… He was one of us. He was a man who loved the outdoors, and bowling, and as a surfer explored the beaches of southern California from Redondo to Calabassos. And he was an avid bowler. And a good friend. He died—he died as so many of his generation, before his time. In your wisdom you took him, Lord. As you took so many bright flowering young men, at Khe San and Lan Doc.</p>
       </section>
     </section>
+    
     <hr />
+    
     <footer class="container">
       <p>Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
 
     </footer>
   </div>
 
-  <scrip src="lib/jquery-dist/jquery-3.1.1.min.js"></scrip>
-  <script src="lib/bootstrap-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/jquery-dist/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-dist/js/bootstrap.min.js"></script>
+  
 </body>
 </html>

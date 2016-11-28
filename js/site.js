@@ -18,9 +18,18 @@
     return false; // Do not complete form submition
   });
   
+  var $sentAlert = $("#sentAlert");
   
   $sentDialog.on("hidden.bs.modal", function () {
-    alert("close");
+    //alert("close");
+    $sentAlert.show();
+  });
+  
+  $sentAlert.on("close.bs.alert", function () {
+    
+    $sentAlert.hide(); // hide instead of remove from DOM
+    
+    return false; // Prevent standard functionality, do not hide alert and remove it from DOM (May not be required if code is comming from razer, but required for Bootstrap)
   });
   
   $("#contactForm input[type=submit]").tooltip({

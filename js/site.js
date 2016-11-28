@@ -39,6 +39,14 @@
     }
   });
   
-  $("#theCarousel").carousel();
+  var $theCarousel = $("#theCarousel");
+  
+  $theCarousel.carousel();
+  
+  $theCarousel.on("slid", function () {
+    var to_slide = $('.carousel-item.active').attr('data-slide-no');
+    $('.myCarousel-target.active').removeClass('active');
+    $('.carousel-indicators [data-slide-to=' + to_slide + ']').addClass('active');
+  });
   
 })();

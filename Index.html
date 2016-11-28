@@ -50,18 +50,25 @@
       <div class="row visible-md visible-lg">
         <div class="col-md-8 col-md-offset-2">
           <div id="theCarousel" class="carousel slide" data-interval="2000">
+            
+            <ol class="carousel-indicators">
+              <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#theCarousel" data-slide-to="1"></li>
+              <li data-target="#theCarousel" data-slide-to="2"></li>
+              <li data-target="#theCarousel" data-slide-to="3"></li>
+            </ol>
 
             <div class="carousel-inner">
-              <div class="item active">
+              <div id="0" class="item active">
                 <img src="images/carousel-1.jpg" alt="1" class="img-responsive">
               </div>
-              <div class="item">
+              <div id="1" class="item">
                 <img src="images/carousel-2.jpg" alt="2" class="img-responsive">
               </div>
-              <div class="item">
+              <div id="2" class="item">
                 <img src="images/carousel-3.jpg" alt="3" class="img-responsive">
               </div>
-              <div class="item">
+              <div id="3" class="item">
                 <img src="images/carousel-4.jpg" alt="4" class="img-responsive">
               </div>
             </div>

@@ -45,7 +45,14 @@
       <h1>Contact Us</h1>
       <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
       
-       <div class="row">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#formTab" data-toggle="tab">Contact Form</a></li>
+        <li><a href="#addressTab" data-toggle="tab">Address</a></li>
+      </ul>
+      
+      <div class="tab-content">
+      <div class="well tab-pane active" id="formTab">
+        <div class="row">
         <form class="form-horizontal" id="contactForm">
         <div class="form-group">
           <label for="nameInput" class="control-label col-md-2">Your Name</label>
@@ -133,23 +140,28 @@
         
       </form>
       </div>
-      
-<!--      <a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog...</a>-->
-      
-      <h3>Our fake address</h3>
-      <div>
-        <address>
-          Big Lebowski Fan Page<br />
-          123 Main Street<br />
-          Rug Ties The Room Together, CA 98765<br />
-          <abbr title="Phone">P:</abbr>
-          425.555.0100
-        </address>
-        <address>
-          <strong>Support:</strong>   <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
-          <strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
-        </address>
       </div>
+      
+      <div class="well tab-pane" id="addressTab">
+      
+        <h3>Our fake address</h3>
+        <div>
+          <address>
+            Big Lebowski Fan Page<br />
+            123 Main Street<br />
+            Rug Ties The Room Together, CA 98765<br />
+            <abbr title="Phone">P:</abbr>
+            425.555.0100
+          </address>
+          <address>
+            <strong>Support:</strong>   <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
+          </address>
+        </div>
+      
+      </div>
+      </div>
+      
     </section>
     <hr />
     <footer class="container">

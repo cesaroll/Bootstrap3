@@ -134,6 +134,8 @@
       </form>
       </div>
       
+      <a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog...</a>
+      
       <h3>Our fake address</h3>
       <div>
         <address>
@@ -155,6 +157,23 @@
     </footer>
   </div>
 
+  <div class="modal fade" id="sentDialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+           <a href="#" class="close" data-dismiss="modal">&times;</a>
+          <h4>thanks for clicking</h4>
+        </div>
+        <div class="model-body">
+          <p>This form doesn't really work...</p>
+        </div>
+        <div class="modal-footer ">
+          <button class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script type="text/javascript" src="lib/jquery-dist/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="lib/bootstrap-dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/site.js"></script>

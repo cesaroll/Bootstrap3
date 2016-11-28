@@ -39,4 +39,6 @@
     }
   });
   
+  $("#theCarousel").carousel();
+  
 })();
